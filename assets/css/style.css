@@ -1,5 +1,20 @@
-.carusel_img img{
-    height: 50vh;
+.carusel_bg{
+    background-color: #fceae8;
+    border-radius: 8px;
+}
+.carousel-item{
+    padding: 20px 40px;
+}
+#price_color{
+    color: #EAA451;
+}
+.buy_now_btn{
+    color: #fff;
+    background: #EAA451;
+    border: none;
+    padding: 9px 25px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 .latest_book {
     height: 420px;
@@ -43,6 +58,8 @@
 .product_img {
     height: 170px;
     width: 100%;
+    object-fit: contain;
+    padding: 12px 0px;
 }
 .product_offers_wrapper{
     background-image: url(../img/offer_bannar.png);
@@ -86,6 +103,7 @@
 @media(max-width: 576px){
     .top_header {
         flex-direction: column;
+        display: none !important;
     }
     .country_info{
         margin-top: -25px;
@@ -105,5 +123,14 @@
     }
     .carusel_img img{
         display: none;
+    }
+}
+@media (max-width: 768px){
+    .nav_bar{
+        display: block !important;
+    }
+    .center_header,
+    .main_navbar{
+        display: none !important;
     }
 }

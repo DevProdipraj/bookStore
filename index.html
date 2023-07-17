@@ -47,7 +47,7 @@
     </section>
     <header class="sticky-top">
         <!-- midule header  -->
-        <section class="center_header_wrapper bg-light py-1">
+        <section class="center_header_wrapper bg-light py-1 ">
             <div class="container-fluid">
                 <div class="center_header d-flex align-items-center justify-content-sm-between my-1">
                     <div class="searece_box     d-sm-none d-md-none d-lg-block border-bottom">
@@ -69,8 +69,8 @@
             </div>
         </section>
         <!-- main navbar   -->
-        <section class="main_navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <section class="main_navbar ">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
@@ -105,6 +105,53 @@
             </nav>
         </section>
 
+        <!-- mobile menu  -->
+        <div class="nav_bar d-none">
+            <div class="">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="./assets/img/brand-icon.png" alt=""></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav m-auto my-2 my-lg-0" >
+                            <li class=" mx-2 nav-item d-flex">
+                                <a class="nav-link text-primary" aria-current="page" href="#">Home</a>
+                                <i class="fa-solid fa-angle-down mt-3"></i>
+                            </li>
+                            <li class=" mx-2 nav-item d-flex">
+                                <a class="nav-link text-primary" aria-current="page" href="#">Shop</a>
+                                <i class="fa-solid fa-angle-down mt-3"></i>
+                            </li>
+                            <li class=" mx-2 nav-item d-flex">
+                                <a class="nav-link text-primary" aria-current="page" href="#">Product</a>
+                                <i class="fa-solid fa-angle-down mt-3"></i>
+                            </li>
+                            <li class=" mx-2 nav-item d-flex">
+                                <a class="nav-link text-primary" aria-current="page" href="#">Blog</a>
+                                <i class="fa-solid fa-angle-down mt-3"></i>
+                            </li>
+                            <li class=" mx-2 nav-item d-flex">
+                                <a class="nav-link text-primary" aria-current="page" href="#">Buy Books</a>
+                                <i class="fa-solid fa-angle-down mt-3"></i>
+                            </li>
+                            <li>
+                                <div class="regitation_section">
+                                    <input class="border-0 btn btn-primary" type="submit" value="RegiSter/login">
+                                    
+                                </div>
+                            </li>
+                            <li class="my-3">
+                                <i class="fa-regular fa-heart mx-1"></i>
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
     </header>
     <!-- main header html end from here  -->
 
@@ -114,73 +161,64 @@
         <section class="hero_section-wrapper">
             <div class="">
                 <div class="hero-section">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item position-relative  bg-primary active py-5">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <div class="carusel_info position-absolute top-50">
-                                                <h2 class="text-danger fs-1  ">50% Off First Order</h2>
-                                                <p class="fs-6 text-white w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum
-                                                    repudiandae magnam.</p>
-                                                <input class="btn btn-outline-primary" type="submit" value="Buy Now">
-                                            </div>
-                                        </div>
-                                        <div class="col-5">
-                                            <div class="carusel_img">
-                                                <img  class="img-flui  " src="./assets/img/carusecel/book2.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div class="carusel bg-primary text-white">
+                        <div class="container">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                                 </div>
-                            </div>
-                            <div class="carousel-item position-relative  bg-primary  py-5">
-                                <div class="container ">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <div class="carusel_info position-absolute top-50">
-                                                <h2 class="text-danger fs-1  ">50% Off First Order</h2>
-                                                <p class="fs-6 text-white w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum
-                                                    repudiandae magnam.</p>
-                                                <input class="btn btn-outline-primary" type="submit" value="Buy Now">
-                                            </div>
-                                        </div>
-                                        <div class="col-5">
-                                            <div class="carusel_img">
-                                                <img  class="img-fluid " src="./assets/img/carusecel/book1.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item  active">
+                                      <div class="row align-items-center">
+                                          <div class="col-md-7 py-3 ">
+                                            <h1 class="fs-2">Pycology Of Money</h1>
+                                            <p>This book was very relatable as Delia cycled through Tinder, speed dating,</p>
+                                            <h1 id="price_color">$40</h1>
+                                            <button class="buy_now_btn">Buy Now</button>
+                                          </div>
+                                          <div class="col-md-5">
+                                            <img class="h-25" src="./assets/img/carusecel/book3.png" class="d-block w-100" alt="...">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item ">
+                                      <div class="row align-items-center">
+                                          <div class="col-md-7 py-3 ">
+                                            <h1 class="fs-2">Pycology Of Money</h1>
+                                            <p>This book was very relatable as Delia cycled through Tinder, speed dating,</p>
+                                            <h1 id="price_color">$20</h1>
+                                            <button class="buy_now_btn">Buy Now</button>
+                                          </div>
+                                          <div class="col-md-5">
+                                            <img class="h-25" src="./assets/img/carusecel/book2.png" class="d-block w-100" alt="...">
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item ">
+                                      <div class="row align-items-center">
+                                          <div class="col-md-7 py-3 ">
+                                            <h1 class="fs-2">Pycology Of Money</h1>
+                                            <p>This book was very relatable as Delia cycled through Tinder, speed dating,</p>
+                                            <h1 id="price_color">$60</h1>
+                                            <button class="buy_now_btn">Buy Now</button>
+                                          </div>
+                                          <div class="col-md-5">
+                                            <img class="h-25" src="./assets/img/carusecel/book1.png" class="d-block w-100" alt="...">
+                                          </div>
+                                      </div>
+                                  </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item position-relative  bg-primary  py-5">
-                                <div class="container ">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <div class="carusel_info position-absolute top-50">
-                                                <h2 class="text-danger fs-1  ">50% Off First Order</h2>
-                                                <p class="fs-6 text-white w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas eum
-                                                    repudiandae magnam.</p>
-                                                <input class="btn btn-outline-primary" type="submit" value="Buy Now">
-                                            </div>
-                                        </div>
-                                        <div class="col-5">
-                                            <div class="carusel_img">
-                                                <img  class="img-fluid " src="./assets/img/carusecel/book3.png" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -312,7 +350,7 @@
                             <div class="why_choose_left">
                                 <div class="why_choose_left_header">
                                     <h2 class="fs-2">Why Choose Us?</h2>
-                                    <p>Our purpose is to build solutions that remove barriers preventing people from
+                                    <p>Our purpose is to build solutions that remove
                                         doing their best work, and this is at the heart.</p>
                                     <ul class="mt-2">
                                         <li class="d-flex align-items-center mt-4">
@@ -323,7 +361,7 @@
                                                 <h3 class="fs-5">100% Payment Secure</h3>
                                                 <p>
                                                     Dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor
-                                                    incididu ut labore et
+                                                    
                                                 </p>
                                             </div>
                                         </li>
@@ -335,7 +373,7 @@
                                                 <h3 class="fs-5">Fast Delivery Just</h3>
                                                 <p>
                                                     Dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor
-                                                    incididu ut labore et
+                                                   
                                                 </p>
                                             </div>
                                         </li>
@@ -346,8 +384,7 @@
                                             <div class="ms-4">
                                                 <h3 class="fs-5">Skip Or Cancel Anytime</h3>
                                                 <p>
-                                                    Dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor
-                                                    incididu ut labore et
+                                                    Dolor sit amet, consectetur adipiscing elit, sed eiusmod 
                                                 </p>
                                             </div>
                                         </li>
@@ -394,7 +431,7 @@
                                     <div class="product_card card mt-3">
                                         <div class="card-img bg-light">
                                             <img class="img-fluid product_img "
-                                                src="./assets/img/product/9866173_225.jpg" alt="">
+                                                src="./assets/img/hot product/book7.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h2 class="fs-3">Terrible Madness</h2>
@@ -413,7 +450,7 @@
                                     <div class="product_card card mt-3">
                                         <div class="card-img bg-light">
                                             <img class="img-fluid product_img "
-                                                src="./assets/img/product/9866173_225.jpg" alt="">
+                                                src="./assets/img/hot product/book1.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h2 class="fs-3">Terrible Madness</h2>
@@ -432,7 +469,7 @@
                                     <div class="product_card card mt-3">
                                         <div class="card-img bg-light">
                                             <img class="img-fluid product_img "
-                                                src="./assets/img/product/9866173_225.jpg" alt="">
+                                                src="./assets/img/hot product/book2.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h2 class="fs-3">Terrible Madness</h2>
@@ -451,7 +488,7 @@
                                     <div class="product_card card mt-3">
                                         <div class="card-img bg-light">
                                             <img class="img-fluid product_img "
-                                                src="./assets/img/product/9866173_225.jpg" alt="">
+                                                src="./assets/img/hot product/book4.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h2 class="fs-3">Terrible Madness</h2>
@@ -470,7 +507,7 @@
                                     <div class="product_card card mt-3">
                                         <div class="card-img bg-light">
                                             <img class="img-fluid product_img "
-                                                src="./assets/img/product/9866173_225.jpg" alt="">
+                                                src="./assets/img/hot product/book5.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h2 class="fs-3">Terrible Madness</h2>
@@ -489,7 +526,7 @@
                                     <div class="product_card card mt-3">
                                         <div class="card-img bg-light">
                                             <img class="img-fluid product_img "
-                                                src="./assets/img/product/9866173_225.jpg" alt="">
+                                                src="./assets/img/hot product/book6.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h2 class="fs-3">Terrible Madness</h2>
@@ -508,7 +545,7 @@
                                     <div class="product_card card mt-3">
                                         <div class="card-img bg-light">
                                             <img class="img-fluid product_img "
-                                                src="./assets/img/product/9866173_225.jpg" alt="">
+                                                src="./assets/img/hot product/book7.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h2 class="fs-3">Terrible Madness</h2>
@@ -527,7 +564,7 @@
                                     <div class="product_card card mt-3">
                                         <div class="card-img bg-light">
                                             <img class="img-fluid product_img "
-                                                src="./assets/img/product/9866173_225.jpg" alt="">
+                                                src="./assets/img/hot product/book4.png" alt="">
                                         </div>
                                         <div class="card-body">
                                             <h2 class="fs-3">Terrible Madness</h2>
@@ -622,7 +659,7 @@
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div class="hot_product_card d-flex align-items-center shadow mt-3 p-3 rounded">
                                             <img class="img-fluid"
-                                                src="./assets/img/hot product/4060994_1159-removebg-preview.png" alt="">
+                                                src="./assets/img/hot product/book2.png" alt="">
                                             <div class="card-body">
                                                 <h2 class="fs-4">Terrible Madness</h2>
                                                 <h4 class="fs-6">Sail Rating:40%</h4>
@@ -640,7 +677,7 @@
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div class="hot_product_card d-flex align-items-center shadow mt-3 p-3 rounded">
                                             <img class="img-fluid"
-                                                src="./assets/img/hot product/4060994_1159-removebg-preview.png" alt="">
+                                                src="./assets/img/hot product/book3.png" alt="">
                                             <div class="card-body">
                                                 <h2 class="fs-4">Terrible Madness</h2>
                                                 <h4 class="fs-6">Sail Rating:40%</h4>
@@ -658,7 +695,7 @@
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div class="hot_product_card d-flex align-items-center shadow mt-3 p-3 rounded">
                                             <img class="img-fluid"
-                                                src="./assets/img/hot product/4060994_1159-removebg-preview.png" alt="">
+                                                src="./assets/img/hot product/book4.png" alt="">
                                             <div class="card-body">
                                                 <h2 class="fs-4">Terrible Madness</h2>
                                                 <h4 class="fs-6">Sail Rating:40%</h4>
@@ -676,7 +713,7 @@
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div class="hot_product_card d-flex align-items-center shadow mt-3 p-3 rounded">
                                             <img class="img-fluid"
-                                                src="./assets/img/hot product/4060994_1159-removebg-preview.png" alt="">
+                                                src="./assets/img/hot product/book6.png" alt="">
                                             <div class="card-body">
                                                 <h2 class="fs-4">Terrible Madness</h2>
                                                 <h4 class="fs-6">Sail Rating:40%</h4>
@@ -694,7 +731,7 @@
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div class="hot_product_card d-flex align-items-center shadow mt-3 p-3 rounded">
                                             <img class="img-fluid"
-                                                src="./assets/img/hot product/4060994_1159-removebg-preview.png" alt="">
+                                                src="./assets/img/hot product/book5.png" alt="">
                                             <div class="card-body">
                                                 <h2 class="fs-4">Terrible Madness</h2>
                                                 <h4 class="fs-6">Sail Rating:40%</h4>
@@ -712,7 +749,7 @@
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div class="hot_product_card d-flex align-items-center shadow mt-3 p-3 rounded">
                                             <img class="img-fluid"
-                                                src="./assets/img/hot product/4060994_1159-removebg-preview.png" alt="">
+                                                src="./assets/img/hot product/book7.png" alt="">
                                             <div class="card-body">
                                                 <h2 class="fs-4">Terrible Madness</h2>
                                                 <h4 class="fs-6">Sail Rating:40%</h4>
@@ -730,7 +767,7 @@
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                         <div class="hot_product_card d-flex align-items-center shadow mt-3 p-3 rounded">
                                             <img class="img-fluid"
-                                                src="./assets/img/hot product/4060994_1159-removebg-preview.png" alt="">
+                                                src="./assets/img/hot product/book1.png" alt="">
                                             <div class="card-body">
                                                 <h2 class="fs-4">Terrible Madness</h2>
                                                 <h4 class="fs-6">Sail Rating:40%</h4>
@@ -798,10 +835,7 @@
                                     </div>
                                     <div class="card_body">
                                         <p class="pt-3">
-                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                            Velit officia consequat duis enim velit mollit. Exercitation veniam
-                                            consequat sunt nostrud amet. Non deserunt ullamco est sit aliqua dolor do
-                                            amet sint
+                                            The quality of the products I purchased was absolutely top-notch. Each item not only met..
                                         </p>
                                         <div class="starts">
                                             <i class="fa-sharp fa-regular fa-star text-danger"></i>
@@ -830,10 +864,8 @@
                                     </div>
                                     <div class="card_body">
                                         <p class="pt-3">
-                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                            Velit officia consequat duis enim velit mollit. Exercitation veniam
-                                            consequat sunt nostrud amet. Non deserunt ullamco est sit aliqua dolor do
-                                            amet sint
+                                            The quality of the products I purchased was absolutely top-notch. Each item not only met...
+                                           
                                         </p>
                                         <div class="starts">
                                             <i class="fa-sharp fa-regular fa-star text-danger"></i>
@@ -862,10 +894,8 @@
                                     </div>
                                     <div class="card_body">
                                         <p class="pt-3">
-                                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                                            Velit officia consequat duis enim velit mollit. Exercitation veniam
-                                            consequat sunt nostrud amet. Non deserunt ullamco est sit aliqua dolor do
-                                            amet sint
+                                            The quality of the products I purchased was absolutely top-notch. Each item not only met...
+                                           
                                         </p>
                                         <div class="starts">
                                             <i class="fa-sharp fa-regular fa-star text-danger"></i>
@@ -992,7 +1022,7 @@
         <div class="container-fluid">
             <div class="footer border-top">
                 <div class="row pt-5">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-12">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-12 text-center text-sm-start">
                         <div class="footer_info">
                             <img class="img-fluid" src="./assets/img/brand-icon.png" alt="">
                             <p class="my-3">
@@ -1008,7 +1038,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-12">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center text-sm-start">
                         <h2 class="fs-4 text-danger">Categories
                         </h2>
                         <ul class="p-0">
@@ -1024,7 +1054,7 @@
                                     Veg</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-12">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center text-sm-start">
                         <h2 class="fs-4 text-danger">Services
                         </h2>
                         <ul class="p-0">
@@ -1040,7 +1070,7 @@
                                     href="#">Blog</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-12">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center text-sm-start">
                         <h2 class="fs-4 text-danger">Privacy & Terms
                         </h2>
                         <ul class="p-0">
@@ -1056,7 +1086,7 @@
                                     Condition</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-4 col-12">
+                    <div class="col-lg-2 col-md-2 col-sm-4 col-6 text-center text-sm-start">
                         <h2 class="fs-4 text-danger">My Account
                         </h2>
                         <ul class="p-0">
